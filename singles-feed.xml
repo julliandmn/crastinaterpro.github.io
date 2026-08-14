@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:podcast="https://github.com" 
+     xmlns:itunes="http://itunes.com">
+  <channel>
+    <!-- Main Artist Hub Profile Details -->
+    <title>Crastinaterpro - Singles</title>
+    <description>The official self-hosted archive of Singles and independent tracks by Crastinaterpro </description>
+    <link>https://julliandmn.github.io/crastinaterpro.github.io/</link>
+    <language>en</language>
+    <itunes:author>Crastinaterpro</itunes:author>
+    <!-- Main profile picture displayed on the Fountain App -->
+    <itunes:image href="https://github.io"/>
+    <itunes:category text="Music"/>
+    <itunes:explicit>no</itunes:explicit>
+    
+    <!-- Music Medium Configuration -->
+    <podcast:medium>music</podcast:medium>
+    
+    <!-- Central Lightning Wallet Configuration (100% of streams) -->
+    <podcast:value type="lightning" method="keysend" suggested="0.00000005000">
+        <podcast:valueRecipient 
+            name="[Your Artist Wallet Label]" 
+            type="node" 
+            address="[YOUR_LIGHTNING_NODE_PUBKEY_OR_ALBY_KEY]" 
+            customKey="696969" 
+            customValue="[YOUR_TLV_VALUE_IF_USING_ALBY]" 
+            split="100" />
+    </podcast:value>
+
+    <!-- ==================== SINGLE #3 (Latest Release) ==================== -->
+    <item>
+      <title>[Title of Your 3rd Single]</title>
+      <itunes:title>[Title of Your 3rd Single]</itunes:title>
+      <description>Released in 2026. Production credits, lyrics, and details go here.</description>
+      <link>https://julliandmn.github.io/crastinaterpro.github.io/</link>
+      <enclosure url="https://github.io" length="8500000" type="audio/mpeg"/>
+      <guid isPermaLink="false">artist_single_project_003</guid>
+      <pubDate>Fri, 14 Aug 2026 12:00:00 GMT</pubDate>
+      <itunes:duration>[MM:SS]</itunes:duration>
+      <podcast:episodeType>full</podcast:episodeType> 
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:image href="https://github.io"/>
+    </item>
+
+    <!-- ==================== SINGLE #2 ==================== -->
+    <item>
+      <title>[Title of Your 2nd Single]</title>
+      <itunes:title>[Title of Your 2nd Single]</itunes:title>
+      <description>Production credits, lyrics, and details go here.</description>
+      <link>https://julliandmn.github.io/crastinaterpro.github.io/</link>
+      <enclosure url="https://github.io" length="8500000" type="audio/mpeg"/>
+      <guid isPermaLink="false">artist_single_project_002</guid>
+      <pubDate>Mon, 01 Jun 2026 12:00:00 GMT</pubDate>
+      <itunes:duration>[MM:SS]</itunes:duration>
+      <podcast:episodeType>full</podcast:episodeType> 
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:image href="https://github.io"/>
+    </item>
+
+    <!-- ==================== SINGLE #1 (Oldest Release) ==================== -->
+    <item>
+      <title>[Title of Your 1st Single]</title>
+      <itunes:title>[Title of Your 1st Single]</itunes:title>
+      <description>The debut single release. Production credits, lyrics, and details go here.</description>
+      <link>https://julliandmn.github.io/crastinaterpro.github.io/</link>
+      <enclosure url="https://github.io" length="8500000" type="audio/mpeg"/>
+      <guid isPermaLink="false">artist_single_project_001</guid>
+      <pubDate>Wed, 01 Jan 2026 12:00:00 GMT</pubDate>
+      <itunes:duration>[MM:SS]</itunes:duration>
+      <podcast:episodeType>full</podcast:episodeType> 
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:image href="https://github.io"/>
+    </item>
+
+  </channel>
+</rss>
