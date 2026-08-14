@@ -31,7 +31,7 @@
 
             try {
                 // Communicates directly with your unique Netlify Backend function URL
-                const response = await fetch('https://netlify.app', {
+                const response = await fetch('https://nimble-sundae-e04d12.netlify.app/.netlify/functions/submit-form', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email: emailInput.value })
