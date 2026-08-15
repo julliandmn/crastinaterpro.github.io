@@ -38,7 +38,7 @@
       <itunes:duration>02:17</itunes:duration>
       <podcast:episodeType>full</podcast:episodeType> 
       <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://github.io"/>
+      <itunes:image href="https://crastinaterpro/github.io"/>
     </item>
 
     <!-- ==================== SINGLE #2 ==================== -->
@@ -53,7 +53,7 @@
       <itunes:duration>03:44</itunes:duration>
       <podcast:episodeType>full</podcast:episodeType> 
       <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://github.io"/>
+      <itunes:image href="https://crastinaterpro/github.io"/>
     </item>
 
     <!-- ==================== SINGLE #1 (Oldest Release) ==================== -->
@@ -69,7 +69,7 @@
       <itunes:duration>03:45</itunes:duration>
       <podcast:episodeType>full</podcast:episodeType> 
       <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://github.io One1.png"/>
+      <itunes:image href="https://crastinaterpro/github.io One1.png"/>
     </item>
 
   </channel>
