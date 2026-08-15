@@ -10,7 +10,7 @@
     <language>en</language>
     <itunes:author>Crastinaterpro</itunes:author>
     <!-- Main profile picture displayed on the Fountain App -->
-    <itunes:image href="https://github.io"/>
+    <itunes:image href=".../images/profile.png"/>
     <itunes:category text="Music"/>
     <itunes:explicit>no</itunes:explicit>
     
@@ -30,47 +30,47 @@
 
     <!-- ==================== SINGLE #3 (Latest Release) ==================== -->
     <item>
-      <title>[Title of Your 3rd Single]</title>
-      <itunes:title>[Title of Your 3rd Single]</itunes:title>
+      <title>Ablaze</title>
+      <itunes:title>Ablaze</itunes:title>
       <description>Released in 2026. Production credits, lyrics, and details go here.</description>
       <link>https://julliandmn.github.io/crastinaterpro.github.io/</link>
-      <enclosure url="https://github.io" length="8500000" type="audio/mpeg"/>
+      <enclosure url=".../audio/Ablaze.mp3" length="8500000" type="audio/mpeg"/>
       <guid isPermaLink="false">artist_single_project_003</guid>
-      <pubDate>Fri, 14 Aug 2026 12:00:00 GMT</pubDate>
-      <itunes:duration>[MM:SS]</itunes:duration>
+      <pubDate>Fri, 15 Aug 2026 12:10:00 GMT</pubDate>
+      <itunes:duration>02:17]</itunes:duration>
       <podcast:episodeType>full</podcast:episodeType> 
       <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://github.io"/>
+      <itunes:image href=".../images/Ablaze.png"/>
     </item>
 
     <!-- ==================== SINGLE #2 ==================== -->
     <item>
-      <title>[Title of Your 2nd Single]</title>
-      <itunes:title>[Title of Your 2nd Single]</itunes:title>
+      <title>Submerged</title>
+      <itunes:title>Submerged</itunes:title>
       <description>Production credits, lyrics, and details go here.</description>
       <link>https://julliandmn.github.io/crastinaterpro.github.io/</link>
-      <enclosure url="https://github.io" length="8500000" type="audio/mpeg"/>
+      <enclosure url=".../audio/Submerged.mp3" length="8500000" type="audio/mpeg"/>
       <guid isPermaLink="false">artist_single_project_002</guid>
-      <pubDate>Mon, 01 Jun 2026 12:00:00 GMT</pubDate>
-      <itunes:duration>[MM:SS]</itunes:duration>
+      <pubDate>Mon, 15 Aug 2026 12:05:00 GMT</pubDate>
+      <itunes:duration>03:44]</itunes:duration>
       <podcast:episodeType>full</podcast:episodeType> 
       <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://github.io"/>
+      <itunes:image href=".../images/Submerged.png"/>
     </item>
 
     <!-- ==================== SINGLE #1 (Oldest Release) ==================== -->
     <item>
-      <title>[Title of Your 1st Single]</title>
-      <itunes:title>[Title of Your 1st Single]</itunes:title>
+      <title>The One</title>
+      <itunes:title>The One</itunes:title>
       <description>The debut single release. Production credits, lyrics, and details go here.</description>
       <link>https://julliandmn.github.io/crastinaterpro.github.io/</link>
-      <enclosure url="https://github.io" length="8500000" type="audio/mpeg"/>
+      <enclosure url=".../audio/The One.mp3" length="8500000" type="audio/mpeg"/>
       <guid isPermaLink="false">artist_single_project_001</guid>
-      <pubDate>Wed, 01 Jan 2026 12:00:00 GMT</pubDate>
-      <itunes:duration>[MM:SS]</itunes:duration>
+      <pubDate>Wed, 15 Aug 2026 12:00:00 GMT</pubDate>
+      <itunes:duration>03:45</itunes:duration>
       <podcast:episodeType>full</podcast:episodeType> 
       <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://github.io"/>
+      <itunes:image href=".../images/The One1.png"/>
     </item>
 
   </channel>
