@@ -10,8 +10,8 @@
     <language>en</language>
     <itunes:author>Crastinaterpro</itunes:author>
     <!-- Main profile picture displayed on the Fountain App -->
-    <itunes:image href=".../images/profile.png"/>
-    <itunes:category text="Music"/>
+    <itunes:image href="https://github.io"/>
+     <itunes:category text="Music"/>
     <itunes:explicit>no</itunes:explicit>
     
     <!-- Music Medium Configuration -->
@@ -38,7 +38,7 @@
       <itunes:duration>02:17]</itunes:duration>
       <podcast:episodeType>full</podcast:episodeType> 
       <itunes:explicit>no</itunes:explicit>
-      <itunes:image href=".../images/Ablaze.png"/>
+      <itunes:image href="https://github.io"/>
     </item>
 
     <!-- ==================== SINGLE #2 ==================== -->
@@ -53,7 +53,7 @@
       <itunes:duration>03:44]</itunes:duration>
       <podcast:episodeType>full</podcast:episodeType> 
       <itunes:explicit>no</itunes:explicit>
-      <itunes:image href=".../images/Submerged.png"/>
+      <itunes:image href="https://github.io"/>
     </item>
 
     <!-- ==================== SINGLE #1 (Oldest Release) ==================== -->
@@ -68,7 +68,7 @@
       <itunes:duration>03:45</itunes:duration>
       <podcast:episodeType>full</podcast:episodeType> 
       <itunes:explicit>no</itunes:explicit>
-      <itunes:image href=".../images/The One1.png"/>
+      <itunes:image href="https://github.io"/>
     </item>
 
   </channel>
