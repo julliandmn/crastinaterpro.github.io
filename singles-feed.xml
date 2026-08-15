@@ -31,7 +31,7 @@
       <title>Ablaze</title>
       <itunes:title>Ablaze</itunes:title>
       <description>Released in 2026. Production credits, lyrics, and details go here.</description>
-      <link>https://julliandmn.github.io/crastinaterpro.github.io/</link>
+      <link>https://julliandmn.github.io/crastinaterpro.github.io/audio/</link>
       <enclosure url="https://github.io" length="8500000" type="audio/mpeg"/>
       <guid isPermaLink="false">artist_single_project_003</guid>
       <pubDate>Sat, 15 Aug 2026 12:10:00 GMT</pubDate>
@@ -46,7 +46,7 @@
       <title>Submerged</title>
       <itunes:title>Submerged</itunes:title>
       <description>Production credits, lyrics, and details go here.</description>
-      <link>https://julliandmn.github.io/crastinaterpro.github.io/</link>
+      <link>https://julliandmn.github.io/crastinaterpro.github.io/audio/</link>
       <enclosure url="https://github.io" length="8500000" type="audio/mpeg"/>
       <guid isPermaLink="false">artist_single_project_002</guid>
       <pubDate>Sat, 15 Aug 2026 12:05:00 GMT</pubDate>
@@ -61,7 +61,7 @@
       <title>The One</title>
       <itunes:title>The One</itunes:title>
       <description>The debut single release. Production credits, lyrics, and details go here.</description>
-      <link>https://julliandmn.github.io/crastinaterpro.github.io/</link>
+      <link>https://julliandmn.github.io/crastinaterpro.github.io/audio/</link>
       <!-- Space encoded cleanly with %20 -->
       <enclosure url="https://github.io" length="8500000" type="audio/mpeg"/>
       <guid isPermaLink="false">artist_single_project_001</guid>
@@ -69,7 +69,7 @@
       <itunes:duration>03:45</itunes:duration>
       <podcast:episodeType>full</podcast:episodeType> 
       <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://julliandmn.github.io/crastinaterpro.github.io/images/The One1.png"/>
+      <itunes:image href="https://julliandmn.github.io/crastinaterpro.github.io/images/TheOne.png"/>
     </item>
 
   </channel>
