@@ -19,14 +19,12 @@
     
     <!-- Central Lightning Wallet Configuration (100% of streams) -->
     <podcast:value type="lightning" method="keysend" suggested="0.00000005000">
-        <podcast:valueRecipient 
-            name="[Your Artist Wallet Label]" 
-            type="node" 
-            address="[YOUR_LIGHTNING_NODE_PUBKEY_OR_ALBY_KEY]" 
-            customKey="696969" 
-            customValue="[YOUR_TLV_VALUE_IF_USING_ALBY]" 
-            split="100" />
-    </podcast:value>
+    <podcast:valueRecipient 
+        name="My Artist Wallet" 
+        type="lnaddress" 
+        address="fourthaura01@walletofsatoshi.com" 
+        split="100" />
+     </podcast:value>
 
     <!-- ==================== SINGLE #3 (Latest Release) ==================== -->
     <item>
