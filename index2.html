@@ -1110,5 +1110,44 @@
   window.addEventListener("resize", debounce(fillMarquees, 200));
 })();
 </script>
+
+
+    <!-- The Form Processing Logic -->
+    <script>
+        document.getElementById('newsletter-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const emailInput = document.getElementById('subscriber-email');
+            const submitBtn = document.getElementById('submit-btn');
+            const originalBtnText = submitBtn.innerText;
+            
+            // Visual loading state
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Sending...";
+
+            try {
+                // Communicates directly with your unique Netlify Backend function URL
+                const response = await fetch("https://nimble-sundae-e04d12.netlify.app/.netlify/functions/subscribe", {
+                    method: "POST",
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: emailInput.value })
+                });
+
+                if (response.ok) {
+                    alert('🎉 Success! You have been subscribed.');
+                    emailInput.value = ''; // Clears the text field
+                } else {
+                    const errorResult = await response.json();
+                    alert('Error: ' + (errorResult.error || 'Submission failed.'));
+                }
+            } catch (err) {
+                alert('Network configuration error occurred.');
+            } finally {
+                // Re-enable interface controls
+                submitBtn.disabled = false;
+                submitBtn.innerText = originalBtnText;
+            }
+        });
+    </script>  
 </body>
 </html>
