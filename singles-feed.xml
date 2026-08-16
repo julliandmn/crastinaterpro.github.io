@@ -1,76 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" 
-     xmlns:podcast="https://julliandmn.github.io/crastinaterpro.github.io/" 
-     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
-  <channel>
-    <!-- Main Artist Hub Profile Details -->
-    <title>Singles</title>
-    <description>The official self-hosted archive of Singles and independent tracks by Crastinaterpro</description>
-    <link>https://julliandmn.github.io/crastinaterpro.github.io</link>
-    <language>en</language>
-    <itunes:author>Crastinaterpro</itunes:author>
-    <!-- Main profile picture displayed on the Fountain App -->
-    <itunes:image href="https://julliandmn.github.io/crastinaterpro.github.io/images/profile.png"/>
-    <itunes:category text="Music"/>
-    <itunes:explicit>false</itunes:explicit>
-    
-    <!-- Music Medium Configuration -->
-    <podcast:medium>music</podcast:medium>
-    
-    <!-- Central Lightning Wallet Configuration (100% of streams) -->
-    <podcast:value type="lightning" method="keysend" suggested="0.00000005000">
-      <podcast:valueRecipient 
-        name="My Artist Wallet" 
-        type="lnaddress" 
-        address="fourthaura01@walletofsatoshi.com" 
-        split="100" />
-    </podcast:value>
-
-    <!-- ==================== SINGLE #3 (Latest Release) ==================== -->
-    <item>
-      <title>Ablaze</title>
-      <itunes:title>Ablaze</itunes:title>
-      <description>Released in 2026. Production credits, lyrics, and details go here.</description>
-      <link>https://julliandmn.github.io/crastinaterpro.github.io</link>
-      <enclosure url="https://julliandmn.github.io/crastinaterpro.github.io/audio/Ablaze.mp3" length="3458260" type="audio/mpeg"/>
-      <guid isPermaLink="false">artist_single_project_003</guid>
-      <pubDate>Sat, 15 Aug 2026 12:10:00 GMT</pubDate>
-      <itunes:duration>02:17</itunes:duration>
-      <podcast:episodeType>full</podcast:episodeType> 
-      <itunes:explicit>false</itunes:explicit>
-      <itunes:image href="https://julliandmn.github.io/crastinaterpro.github.io/images/Ablaze.png"/>
-    </item>
-
-    <!-- ==================== SINGLE #2 ==================== -->
-    <item>
-      <title>Submerged</title>
-      <itunes:title>Submerged</itunes:title>
-      <description>Production credits, lyrics, and details go here.</description>
-      <link>https://julliandmn.github.io/crastinaterpro.github.io</link>
-      <enclosure url="https://julliandmn.github.io/crastinaterpro.github.io/audio/Submerged.mp3" length="6485489" type="audio/mpeg"/>
-      <guid isPermaLink="false">artist_single_project_002</guid>
-      <pubDate>Sat, 15 Aug 2026 12:05:00 GMT</pubDate>
-      <itunes:duration>03:44</itunes:duration>
-      <podcast:episodeType>full</podcast:episodeType> 
-      <itunes:explicit>false</itunes:explicit>
-      <itunes:image href="https://julliandmn.github.io/crastinaterpro.github.io/images/Submerged.png"/>
-    </item>
-
-    <!-- ==================== SINGLE #1 (Oldest Release) ==================== -->
-    <item>
-      <title>The One</title>
-      <itunes:title>The One</itunes:title>
-      <description>The debut single release. Production credits, lyrics, and details go here.</description>
-      <link>https://julliandmn.github.io/crastinaterpro.github.io</link>
-      <!-- Space encoded cleanly with %20 -->
-      <enclosure url="https://julliandmn.github.io/crastinaterpro.github.io/audio/TheOne.mp3" length="3599298" type="audio/mpeg"/>
-      <guid isPermaLink="false">artist_single_project_001</guid>
-      <pubDate>Sat, 15 Aug 2026 12:00:00 GMT</pubDate>
-      <itunes:duration>03:45</itunes:duration>
-      <podcast:episodeType>full</podcast:episodeType> 
-      <itunes:explicit>false</itunes:explicit>
-      <itunes:image href="https://julliandmn.github.io/crastinaterpro.github.io/images/TheOne.png"/>
-    </item>
-
-  </channel>
+<rss xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+    <channel>
+        <title>Singles</title>
+        <itunes:author>Crastinaterpro</itunes:author>
+        <description>
+            The official self-hosted archive of Singles and experimental tracks by Crastinaterpro
+        </description>
+        <link>https://julliandmn.github.io/crastinaterpro.github.io</link>
+        <language>en</language>
+        <generator>MSP 2.0 - Music Side Project Studio</generator>
+        <pubDate>Sun, 16 Aug 2026 20:38:16 GMT</pubDate>
+        <lastBuildDate>Sun, 16 Aug 2026 20:44:20 GMT</lastBuildDate>
+        <podcast:guid>45bdd936-ceeb-4207-bf8e-f68826c51298</podcast:guid>
+        <podcast:txt purpose="npub">npub1d2laaczue7lfhwulnhzsczyh5cy9762x6nnyju5vcwesdnm64hzq0s389g</podcast:txt>
+        <itunes:category text="Music" />
+        <itunes:keywords>Acoustic, Guitar, Indie, Soul. Experimental</itunes:keywords>
+        <image>
+            <url>https://julliandmn.github.io/crastinaterpro.github.io/images/profile.png</url>
+            <title>Singles</title>
+            <link>https://julliandmn.github.io/crastinaterpro.github.io</link>
+        </image>
+        <itunes:image href="https://julliandmn.github.io/crastinaterpro.github.io/images/profile.png" />
+        <podcast:medium>music</podcast:medium>
+        <itunes:explicit>false</itunes:explicit>
+        <itunes:owner>
+            <itunes:name>Jullian Damon</itunes:name>
+            <itunes:email>julliandmn@gmail.com</itunes:email>
+        </itunes:owner>
+        <podcast:value type="lightning" method="lnaddress" suggested="5e-8">
+            <podcast:valueRecipient name="My Artist Wallet" address="fourthaura01@walletofsatoshi.com" split="100" type="lnaddress" />
+        </podcast:value>
+        <item>
+            <title>Ablaze</title>
+            <description>Released in 2026. Production credits, lyrics, and details go here.</description>
+            <pubDate>Sat, 15 Aug 2026 12:10:00 GMT</pubDate>
+            <guid isPermaLink="false">artist_single_project_003</guid>
+            <itunes:image href="https://julliandmn.github.io/crastinaterpro.github.io/images/Ablaze.png" />
+            <enclosure url="https://julliandmn.github.io/crastinaterpro.github.io/audio/Ablaze.mp3" length="3458260" type="audio/mpeg"/>
+            <itunes:duration>02:17</itunes:duration>
+            <podcast:season>1</podcast:season>
+            <podcast:episode>1</podcast:episode>
+            <itunes:explicit>false</itunes:explicit>
+            <podcast:value type="lightning" method="lnaddress" suggested="5e-8">
+                <podcast:valueRecipient name="My Artist Wallet" address="fourthaura01@walletofsatoshi.com" split="100" type="lnaddress" />
+            </podcast:value>
+            <itunes:title>Ablaze</itunes:title>
+            <link>https://julliandmn.github.io/crastinaterpro.github.io</link>
+            <podcast:episodeType>full</podcast:episodeType>
+        </item>
+        <item>
+            <title>Submerged</title>
+            <description>Production credits, lyrics, and details go here.</description>
+            <pubDate>Sat, 15 Aug 2026 12:05:00 GMT</pubDate>
+            <guid isPermaLink="false">artist_single_project_002</guid>
+            <itunes:image href="https://julliandmn.github.io/crastinaterpro.github.io/images/Submerged.png" />
+            <enclosure url="https://julliandmn.github.io/crastinaterpro.github.io/audio/Submerged.mp3" length="6485489" type="audio/mpeg"/>
+            <itunes:duration>03:44</itunes:duration>
+            <podcast:season>1</podcast:season>
+            <podcast:episode>2</podcast:episode>
+            <itunes:explicit>false</itunes:explicit>
+            <podcast:value type="lightning" method="lnaddress" suggested="5e-8">
+                <podcast:valueRecipient name="My Artist Wallet" address="fourthaura01@walletofsatoshi.com" split="100" type="lnaddress" />
+            </podcast:value>
+            <itunes:title>Submerged</itunes:title>
+            <link>https://julliandmn.github.io/crastinaterpro.github.io</link>
+            <podcast:episodeType>full</podcast:episodeType>
+        </item>
+        <item>
+            <title>The One</title>
+            <description>The debut single release. Production credits, lyrics, and details go here.</description>
+            <pubDate>Sat, 15 Aug 2026 12:00:00 GMT</pubDate>
+            <guid isPermaLink="false">artist_single_project_001</guid>
+            <itunes:image href="https://julliandmn.github.io/crastinaterpro.github.io/images/TheOne.png" />
+            <enclosure url="https://julliandmn.github.io/crastinaterpro.github.io/audio/TheOne.mp3" length="3599298" type="audio/mpeg"/>
+            <itunes:duration>03:45</itunes:duration>
+            <podcast:season>1</podcast:season>
+            <podcast:episode>3</podcast:episode>
+            <itunes:explicit>false</itunes:explicit>
+            <podcast:value type="lightning" method="lnaddress" suggested="5e-8">
+                <podcast:valueRecipient name="My Artist Wallet" address="fourthaura01@walletofsatoshi.com" split="100" type="lnaddress" />
+            </podcast:value>
+            <itunes:title>The One</itunes:title>
+            <link>https://julliandmn.github.io/crastinaterpro.github.io</link>
+            <podcast:episodeType>full</podcast:episodeType>
+        </item>
+    </channel>
 </rss>
