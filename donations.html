@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Donations</title>
+    <!-- External stylesheet matching the Crastinaterpro design template -->
+    <link rel="stylesheet" href="https://julliandmn.github.io/crastinaterpro.github.io/index2">
+    <style>
+        /* Custom spacing to center the donation card within the template layout */
+        .donation-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            background: #000; /* Dark baseline matching the hyperpop aesthetic */
+        }
+        .donation-card {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+            border: 2px solid var(--primary-color, #fff);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+        }
+        .donation-card h1 {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .donation-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-bottom: 30px;
+        }
+        .donation-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        /* Overriding template link styles to make them distinct vertical buttons */
+        .donation-grid .custom-btn {
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding: 15px 20px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .donation-grid .custom-btn:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+    <section class="donation-section">
+        <div class="donation-card">
+            <!-- Header matching requirements -->
+            <h1 class="tm-text-primary">Donations</h1>
+            <p class="donation-subtitle">Support the stream. Select a tier below to tip via PayFast.</p>
+            
+            <!-- 5 Buttons linked to exact PayFast payment gateways -->
+            <div class="donation-grid">
+                <a href="https://www.payfast.co.za/eng/process?merchant_id=20103931&merchant_key=qur3hp2xix5z1&item_name=Stream+Donation&amount=20.00" 
+                   class="custom-btn tm-btn-primary" target="_blank">
+                   Tier 1: R20.00
+                </a>
+                
+                <a href="https://www.payfast.co.za/eng/process?merchant_id=20103931&merchant_key=qur3hp2xix5z1&item_name=Stream+Donation&amount=50.00" 
+                   class="custom-btn tm-btn-secondary" target="_blank">
+                   Tier 2: R50.00
+                </a>
+                
+                <a href="https://www.payfast.co.za/eng/process?merchant_id=20103931&merchant_key=qur3hp2xix5z1&item_name=Stream+Donation&amount=100.00" 
+                   class="custom-btn tm-btn-primary" target="_blank">
+                   Tier 3: R100.00
+                </a>
+                
+                <a href="https://www.payfast.co.za/eng/process?merchant_id=20103931&merchant_key=qur3hp2xix5z1&item_name=Stream+Donation&amount=200.00" 
+                   class="custom-btn tm-btn-secondary" target="_blank">
+                   Tier 4: R200.00
+                </a>
+                
+                <a href="https://www.payfast.co.za/eng/process?merchant_id=20103931&merchant_key=qur3hp2xix5z1&item_name=Stream+Donation&amount=500.00" 
+                   class="custom-btn tm-btn-primary" target="_blank">
+                   Tier 5: R500.00
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
