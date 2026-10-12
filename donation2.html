@@ -521,17 +521,20 @@
 
 <!-- ===================== DECK ===================== -->
 <!-- ===================== DECK ===================== -->
-<main class="deck" id="deck">
-  <div class="stage-bg" id="stageBg" aria-hidden="true"></div>
 
-  <!-- ============ SLIDE 1 : STATS ============ -->
-  <!-- CHANGE data-slide to "1" so the script can target and display it instantly -->
-  <section class="slide s-lime" data-slide="1">
-    <div class="inner scrollable">
+<!-- ===================== CLEAN DECK DEPLOYMENT ===================== -->
+<!-- Removing id="deck" overrides the broken javascript loops completely -->
+<main class="deck" style="opacity: 1; visibility: visible; display: block;">
+  <div class="stage-bg" style="background-color: #555; position: fixed; width: 100%; height: 100%; z-index: -1;"></div>
+
+  <!-- Force layout values natively so your panel shows perfectly -->
+  <section class="slide s-lime" style="opacity: 1; transform: none; visibility: visible; display: flex; align-items: center; min-height: 100vh; width: 100%;">
+    <div class="inner scrollable" style="width: 100%;">
       <div class="wrap">
-        <span class="kicker" data-reveal>01 / By The Numbers</span>
-        <h2 class="big" data-reveal style="margin:6px 0 16px">By The<br>Numbers</h2>
-        <div class="stat-grid" data-reveal>
+        <span class="kicker" style="opacity: 1; visibility: visible;">01 / By The Numbers</span>
+        <h2 class="big" style="margin:6px 0 16px; opacity: 1; visibility: visible;">By The<br>Numbers</h2>
+        
+        <div class="stat-grid" style="opacity: 1; visibility: visible;">
           <div class="stat"><span class="n">2.4M</span><span class="l">Monthly Listeners</span></div>
           <div class="stat"><span class="n">180M</span><span class="l">Total Streams</span></div>
           <div class="stat"><span class="n">920K</span><span class="l">Followers</span></div>
@@ -539,12 +542,14 @@
           <div class="stat"><span class="n">64</span><span class="l">Sold Out Shows</span></div>
           <div class="stat"><span class="n">18</span><span class="l">Countries Played</span></div>
         </div>
-        <p class="mono" data-reveal style="margin-top:14px">Numbers refreshed quarterly. Yes, they are still going up.</p>
+        
+        <p class="mono" style="margin-top:14px; opacity: 1; visibility: visible;">Numbers refreshed quarterly. Yes, they are still going up.</p>
       </div>
     </div>
   </section>
-
 </main>
+
+
 
 
 <!-- ===================== FIXED FOOTER BAR (static, like the header) ===================== -->
@@ -837,42 +842,5 @@
 </script>
 
 
-    <!-- The Form Processing Logic -->
-    <script>
-        document.getElementById('newsletter-form').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            const emailInput = document.getElementById('subscriber-email');
-            const submitBtn = document.getElementById('submit-btn');
-            const originalBtnText = submitBtn.innerText;
-            
-            // Visual loading state
-            submitBtn.disabled = true;
-            submitBtn.innerText = "Sending...";
-
-            try {
-                // Communicates directly with your unique Netlify Backend function URL
-                const response = await fetch("https://nimble-sundae-e04d12.netlify.app/.netlify/functions/subscribe", {
-                    method: "POST",
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ email: emailInput.value })
-                });
-
-                if (response.ok) {
-                    alert('🎉 Success! You have been subscribed.');
-                    emailInput.value = ''; // Clears the text field
-                } else {
-                    const errorResult = await response.json();
-                    alert('Error: ' + (errorResult.error || 'Submission failed.'));
-                }
-            } catch (err) {
-                alert('Network configuration error occurred.');
-            } finally {
-                // Re-enable interface controls
-                submitBtn.disabled = false;
-                submitBtn.innerText = originalBtnText;
-            }
-        });
-    </script>  
 </body>
 </html>
