@@ -1153,22 +1153,29 @@
         });
     </script>  
 
- <script>
-  window.addEventListener('DOMContentLoaded', () => {
-    // Check if there is a hash number in the URL (e.g., #4)
-    const hash = window.location.hash;
-    if (hash) {
-      const slideIndex = parseInt(hash.replace('#', ''), 10);
-      
-      // If a slider object exists (like fullpage, slick, or swiper), trigger it.
-      // TemplateMo layout typical fix:
-      if (typeof $.fn.slick === 'function') {
-        $('.main-content').slick('slickGoTo', slideIndex - 1);
-      } else if (typeof fullpage_api !== 'undefined') {
-        fullpage_api.moveTo(slideIndex);
-      }
-    }
-  });
-</script> 
+    <!-- Paste this at the bottom of index2.html right above </body> -->
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const hash = window.location.hash;
+        if (hash) {
+          // Convert "#4" to number 4
+          const targetIndex = parseInt(hash.replace('#', ''), 10);
+          
+          if (!isNaN(targetIndex)) {
+            // Find all matching slide links inside the navigation menu or control system
+            const targetMenuLink = document.querySelector(`.menu-link[data-slide="${targetIndex}"], [data-page="${targetIndex}"]`);
+            
+            if (targetMenuLink) {
+              // Trigger a click to let the template's internal JS execute natively
+              targetMenuLink.click();
+            } else if (typeof highlightMenu === 'function') {
+              // Alternate fallback call built into certain TemplateMo single-page structures
+              highlightMenu(targetIndex);
+            }
+          }
+        }
+      });
+    </script>
+
 </body>
 </html>
