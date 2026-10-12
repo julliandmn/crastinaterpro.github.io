@@ -1152,5 +1152,23 @@
             }
         });
     </script>  
+
+ <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // Check if there is a hash number in the URL (e.g., #4)
+    const hash = window.location.hash;
+    if (hash) {
+      const slideIndex = parseInt(hash.replace('#', ''), 10);
+      
+      // If a slider object exists (like fullpage, slick, or swiper), trigger it.
+      // TemplateMo layout typical fix:
+      if (typeof $.fn.slick === 'function') {
+        $('.main-content').slick('slickGoTo', slideIndex - 1);
+      } else if (typeof fullpage_api !== 'undefined') {
+        fullpage_api.moveTo(slideIndex);
+      }
+    }
+  });
+</script> 
 </body>
 </html>
